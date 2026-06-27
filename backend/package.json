@@ -8,7 +8,11 @@
     "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["freelance", "hiring", "mern"],
+  "keywords": [
+    "freelance",
+    "hiring",
+    "mern"
+  ],
   "author": "Fatima Amir",
   "license": "ISC",
   "type": "commonjs",

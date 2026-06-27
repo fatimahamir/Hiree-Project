@@ -40,7 +40,8 @@ app.use(cors({
   origin: [
     'http://localhost:5173',                    
     'http://localhost:3000',                   
-    'https://hiree-frontend.vercel.app',      
+     'https://hiree-project-git-main-fatimah-amirs-projects.vercel.app', 
+    'https://hiree-project.vercel.app'     
     
   ],
   credentials: true,

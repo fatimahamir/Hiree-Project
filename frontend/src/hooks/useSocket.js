@@ -2,13 +2,13 @@
 import { useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 
-const SOCKET_URL = 'http://localhost:5000'; // Backend URL
+const SOCKET_URL = 'https://hiree-project-production.up.railway.app'; 
 
 export const useSocket = () => {
   const socketRef = useRef(null);
 
   useEffect(() => {
-    // Socket connection establish karo
+    
     socketRef.current = io(SOCKET_URL, {
       transports: ['websocket'],
       withCredentials: true,

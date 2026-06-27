@@ -1,15 +1,17 @@
-import axios from 'axios';
+import axios from "axios";
 
 const API = axios.create({
-  baseURL: 'https://hiree-project-production.up.railway.app/', 
+  baseURL: "https://hiree-project-production.up.railway.app/api",
+  withCredentials: true,
 });
 
-// Har request ke sath token bhejne ke liye
 API.interceptors.request.use((req) => {
-  const token = localStorage.getItem('token');
+  const token = localStorage.getItem("token");
+
   if (token) {
     req.headers.Authorization = `Bearer ${token}`;
   }
+
   return req;
 });
 
