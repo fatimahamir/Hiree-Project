@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api', // Aapka backend port 5000 par chal raha hai
+  baseURL: 'https://hiree-project-production.up.railway.app/', 
 });
 
 // Har request ke sath token bhejne ke liye
