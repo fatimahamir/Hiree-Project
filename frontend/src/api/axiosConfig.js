@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://hiree-project-production.up.railway.app/api",
+  baseURL: "https://hiree-backend.bonto.run/api",
   withCredentials: true,
 });
 
